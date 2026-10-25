@@ -1,6 +1,9 @@
 # BrandGuard AI 🛡️
 > **"Evidence-backed brand governance before publication. Every content decision. Backed by evidence."**
 
+- **GitHub Repository**: [https://github.com/Shaurya18yadav/BRANDGUARD](https://github.com/Shaurya18yadav/BRANDGUARD)
+- **Live GitHub Pages URL**: [https://shaurya18yadav.github.io/BRANDGUARD/](https://shaurya18yadav.github.io/BRANDGUARD/)
+
 BrandGuard AI serves as an active control layer between creator content generation and audience publication. Rather than relying on retroactive human audits, BrandGuard verifies drafts against a version-controlled enterprise brand knowledge base before public release.
 
 ---
@@ -18,8 +21,8 @@ BrandGuard AI serves as an active control layer between creator content generati
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/Shaurya18yadav/HTML-FILE-.git
-cd BRANDGAURD
+git clone https://github.com/Shaurya18yadav/BRANDGUARD.git
+cd BRANDGUARD
 
 # 2. Install dependencies
 npm install

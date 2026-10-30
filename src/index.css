@@ -18,63 +18,99 @@
 .mark-critical {
   background-color: rgba(239, 68, 68, 0.22);
   border-bottom: 2px solid #dc2626;
-  border-radius: 2px;
-  padding: 1px 2px;
+  border-radius: 3px;
+  padding: 1px 3px;
   cursor: pointer;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.18s ease-in-out;
 }
 .mark-critical:hover, .mark-critical.selected {
-  background-color: rgba(239, 68, 68, 0.4);
-  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.5);
+  background-color: rgba(239, 68, 68, 0.42);
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.6);
+  transform: translateY(-1px);
 }
 
 .mark-high {
   background-color: rgba(249, 115, 22, 0.22);
   border-bottom: 2px solid #ea580c;
-  border-radius: 2px;
-  padding: 1px 2px;
+  border-radius: 3px;
+  padding: 1px 3px;
   cursor: pointer;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.18s ease-in-out;
 }
 .mark-high:hover, .mark-high.selected {
-  background-color: rgba(249, 115, 22, 0.4);
-  box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.5);
+  background-color: rgba(249, 115, 22, 0.42);
+  box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.6);
+  transform: translateY(-1px);
 }
 
 .mark-medium {
   background-color: rgba(234, 179, 8, 0.25);
   border-bottom: 2px solid #ca8a04;
-  border-radius: 2px;
-  padding: 1px 2px;
+  border-radius: 3px;
+  padding: 1px 3px;
   cursor: pointer;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.18s ease-in-out;
 }
 .mark-medium:hover, .mark-medium.selected {
   background-color: rgba(234, 179, 8, 0.45);
-  box-shadow: 0 0 0 2px rgba(202, 138, 4, 0.5);
+  box-shadow: 0 0 0 2px rgba(202, 138, 4, 0.6);
+  transform: translateY(-1px);
 }
 
 .mark-low {
   background-color: rgba(59, 130, 246, 0.18);
   border-bottom: 2px solid #2563eb;
-  border-radius: 2px;
-  padding: 1px 2px;
+  border-radius: 3px;
+  padding: 1px 3px;
   cursor: pointer;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.18s ease-in-out;
 }
 .mark-low:hover, .mark-low.selected {
-  background-color: rgba(59, 130, 246, 0.35);
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5);
+  background-color: rgba(59, 130, 246, 0.38);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.6);
+  transform: translateY(-1px);
 }
 
-/* Glass and subtle card shadows */
+/* Glass & Card Styling */
 .card-glass {
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(20, 40, 75, 0.1);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(20, 40, 75, 0.12);
 }
 
-/* Focus styles for WCAG 2.2 */
+.paper-sheet {
+  background-color: #ffffff;
+  box-shadow: 0 10px 35px -5px rgba(20, 40, 75, 0.08), 0 2px 6px -1px rgba(20, 40, 75, 0.04);
+  border: 1px solid rgba(20, 40, 75, 0.12);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(220, 230, 240, 0.5);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 40, 75, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(20, 40, 75, 0.45);
+}
+
+/* Micro-animations */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(0.98); }
+}
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+/* Focus styles for accessibility */
 :focus-visible {
   outline: 2px solid #14284B;
   outline-offset: 2px;
